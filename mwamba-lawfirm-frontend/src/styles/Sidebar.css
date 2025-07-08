@@ -1,0 +1,77 @@
+/* Sidebar.css */
+
+.sidebar {
+  width: 220px;
+  background-color: #1e3a8a;
+  color: white;
+  height: calc(100vh - 64px); /* Adjust if Navbar height changes */
+  position: sticky;
+  top: 64px; /* Assuming Navbar height */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 12px;
+}
+
+.sidebar nav ul li a {
+  display: block;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-left: 4px solid transparent;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #374151;
+}
+
+.sidebar nav ul li a.active {
+  background-color: #fbbf24;
+  color: #111827;
+  border-left-color: #fbbf24;
+  font-weight: 700;
+}
+
+/* Responsive: collapse sidebar on smaller screens */
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    padding-top: 10px;
+  }
+  .sidebar nav ul li a {
+    padding: 12px 12px;
+    font-size: 0;
+    position: relative;
+  }
+  .sidebar nav ul li a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    background: #1e3a8a;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    font-size: 14px;
+  }
+  .sidebar nav ul li a:hover::after {
+    opacity: 1;
+  }
+}

@@ -1,38 +1,112 @@
-.hero {
-  background: linear-gradient(to right, rgba(30, 42, 56, 0.9), rgba(30, 42, 56, 0.7)),
-    url('https://images.unsplash.com/photo-1536305030019-4e9ec1d74a78?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-  height: 80vh;
+/* Home.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.home-container {
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #1e3a8a;
   color: white;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url('https://images.unsplash.com/photo-1555375771-2f5abf9d3f87') center/cover no-repeat;
+  padding: 100px 20px;
   text-align: center;
-  padding: 0 2rem;
-  border-radius: 8px;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 700px;
 }
 
-.hero-content p {
-  font-size: 1.3rem;
-  max-width: 600px;
-  margin: 0 auto 2rem auto;
+.title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1e3a8a;
 }
 
-.hero-buttons a {
-  text-decoration: none;
-  padding: 0.75rem 2rem;
-  background-color: #f1c40f;
-  color: #1e2a38;
-  border-radius: 5px;
-  margin: 0 1rem;
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #374151;
+}
+
+.cta-button {
+  background-color: #fbbf24;
+  color: #111827;
+  padding: 12px 24px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
-.hero-buttons a:hover {
-  background-color: #d4ac0d;
+.cta-button:hover {
+  background-color: #f59e0b;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #f3f4f6;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.feature-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e3a8a;
+  color: white;
 }

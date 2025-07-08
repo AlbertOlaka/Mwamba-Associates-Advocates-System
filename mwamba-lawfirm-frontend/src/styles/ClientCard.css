@@ -1,0 +1,45 @@
+/* ClientCard.css */
+
+.client-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  margin-bottom: 20px;
+  max-width: 400px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.client-card:hover {
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+}
+
+.client-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.client-header h3 {
+  color: #1e3a8a;
+  font-size: 20px;
+  margin: 0;
+}
+
+.client-id {
+  background-color: #fbbf24;
+  color: #111827;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  user-select: none;
+}
+
+.client-details p {
+  margin: 6px 0;
+  color: #374151;
+  font-size: 15px;
+}

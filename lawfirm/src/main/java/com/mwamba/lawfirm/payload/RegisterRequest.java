@@ -18,6 +18,17 @@ public class RegisterRequest {
     @Email
     private String email;
 
+       @NotBlank
+    private String role; 
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
     // getters and setters
     public String getUsername() {
         return username;

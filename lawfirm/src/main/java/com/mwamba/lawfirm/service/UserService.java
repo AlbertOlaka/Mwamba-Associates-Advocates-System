@@ -38,10 +38,11 @@ public class UserService {
         user.setPassword(passwordEncoder.encode(registerRequest.getPassword()));
 
         // Assign CLIENT role by default
-        Role clientRole = roleRepository.findByName(RoleName.ROLE_CLIENT)
-                .orElseThrow(() -> new RuntimeException("Role not found"));
+       RoleName roleName = RoleName.valueOf(registerRequest.getRole());
+        Role userRole = roleRepository.findByName(roleName)
+        .orElseThrow(() -> new RuntimeException("Role not found"));
+            user.setRoles(Collections.singleton(userRole));
 
-        user.setRoles(Collections.singleton(clientRole));
 
         return userRepository.save(user);
     }

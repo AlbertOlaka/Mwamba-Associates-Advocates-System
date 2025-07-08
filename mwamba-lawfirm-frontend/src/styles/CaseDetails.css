@@ -1,0 +1,114 @@
+/* CaseDetails.css */
+
+body {
+  background-color: #f3f4f6;
+}
+
+.casedetails-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.casedetails-body {
+  display: flex;
+  flex: 1;
+}
+
+.casedetails-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #f3f4f6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.casedetails-content h2 {
+  color: #1e3a8a;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.case-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.document-upload-section {
+  margin-top: 40px;
+}
+
+.document-upload-section h3 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.upload-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.upload-form input[type="file"] {
+  flex: 1;
+}
+
+.upload-button {
+  background-color: #fbbf24;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #111827;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.upload-button:hover {
+  background-color: #f59e0b;
+}
+
+.document-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  color: #374151;
+}
+
+.doc-action-btn {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.doc-action-btn:hover {
+  background-color: #3b82f6;
+}
+
+.doc-action-btn.delete {
+  background-color: #ef4444;
+}
+
+.doc-action-btn.delete:hover {
+  background-color: #b91c1c;
+}

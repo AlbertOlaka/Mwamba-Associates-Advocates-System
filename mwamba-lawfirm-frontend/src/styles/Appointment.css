@@ -1,0 +1,57 @@
+/* AppointmentCard.css */
+
+.appointment-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  max-width: 400px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.appointment-card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.appointment-header h3 {
+  color: #1e3a8a;
+  font-size: 20px;
+  margin: 0;
+}
+
+.status {
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+  text-transform: capitalize;
+  user-select: none;
+}
+
+.status.scheduled {
+  background-color: #3b82f6; /* blue */
+}
+
+.status.completed {
+  background-color: #22c55e; /* green */
+}
+
+.status.cancelled {
+  background-color: #ef4444; /* red */
+}
+
+.appointment-details p {
+  margin: 6px 0;
+  color: #374151;
+  font-size: 15px;
+}

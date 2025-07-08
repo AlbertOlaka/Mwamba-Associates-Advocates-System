@@ -1,0 +1,57 @@
+/* CaseCard.css */
+
+.case-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  margin-bottom: 20px;
+  max-width: 400px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.case-card:hover {
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.15);
+}
+
+.case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.case-header h3 {
+  color: #1e3a8a;
+  font-size: 20px;
+  margin: 0;
+}
+
+.status {
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+  text-transform: capitalize;
+  user-select: none;
+}
+
+.status.open {
+  background-color: #22c55e; /* green */
+}
+
+.status.closed {
+  background-color: #6b7280; /* gray */
+}
+
+.status.pending {
+  background-color: #fbbf24; /* amber */
+}
+
+.case-details p {
+  margin: 6px 0;
+  color: #374151;
+  font-size: 15px;
+}
